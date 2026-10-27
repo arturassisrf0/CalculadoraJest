@@ -3,15 +3,19 @@ function somar(a,b){
 }
 
 function subtrair(a,b){
-    return 0;
+    return a-b;
 }
 
 function multiplicar(a,b){
-    return 0;
+    return a*b;
 }
 
 function dividir(a,b){
-    return 0;
+if(a==0 || b==0){
+    return "não é valido dividir por 0";
+}
+
+    return a/b;
 }
 
 module.exports = {somar, subtrair, multiplicar, dividir};
